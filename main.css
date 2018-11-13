@@ -85,6 +85,7 @@ header {
 .list {
     margin: 0;
     padding-left: 7px;
+    inline-size: 4px;
 }
 
 .list li{
@@ -94,14 +95,34 @@ header {
 }
 
 .list li > a {
-    font-size: 11px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+a:active {
+    color: #146eb4;
+}
+
+#followedPlaylists {
+    font-size: 14px;
+}
+
+#myPlaylists {
+    font-size: 14px;
+}
+
+#myPlayList {
+
 }
 
 .button {
+    width: 170px;
     background-color: #146eb4;
     color: white;
     border: none;
     cursor: pointer;
+    outline: none;
     padding: 10px 30px;
+    margin-top: 15px;
     border-radius: 6px;
 }
