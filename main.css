@@ -9,8 +9,8 @@ body {
     height: 100%;
     grid-template-columns: 12.5rem auto;
     grid-template-rows: [sideMenu] 4.5rem [main] auto;
-    grid-template-areas: "header header",
-                         "sidebar mainbody";
+    /* grid-template-areas: "header header", */
+                         /* "sidebar mainbody"; */
 }
 
 .backdrop {
@@ -129,29 +129,47 @@ a:active {
     text-decoration: underline;
 }
 
-.store {
+.store,
+.userProfile {
     width: 180px;
-    height: 20px;
-    padding: 0;
-    text-align: center; 
-    border-top: 1px solid rgb(132, 136, 155);
-    border-bottom: 1px solid rgb(132, 136, 155);
+    height: 25px;
+    text-align: left; 
+}
+
+.store {
+    border-top: 1px solid rgba(132, 136, 155, 0.5);
+    border-bottom: 1px solid rgba(132, 136, 155, 0.5);
+}
+
+.userProfile {
+    border-bottom: 1px solid rgba(132, 136, 155, 0.5);
 }
 
 #mySubscription {
     font-weight: 300;
     text-transform: none;
     font-size: 14px;
+    margin: 0;
+    line-height: 1.5rem;
+    color: rgb(132, 136, 155);
+}
+
+.store a,
+.userProfile a,
+#mySubscription+a {
+    margin-left: 7px;
 }
 
 .button {
-    width: 170px;
+    width: 180px;
     background-color: #146eb4;
     color: white;
     border: none;
     cursor: pointer;
     outline: none;
     padding: 10px 30px;
-    margin-top: 15px;
-    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
