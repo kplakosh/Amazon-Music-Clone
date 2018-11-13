@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: [logoMenu]12.5rem auto;
+    grid-template-rows: [sideMenu] 4.5rem [main] auto;
+    grid-template-areas: "header header",
+                         "sidebar mainbody";
+}
+
+header {
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    grid-area: header;
+}
+
+.header {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    background-color: #1b1c27;
+    display: inline-flex;
+}
+
+.mainIcon {
+    width: 200px;
+}
+
+#amazonLogo {
+    height: 4.5rem;
+}
+
+.serchBox {
+    margin: 9px;
+    margin-left: 3px;
+    display: block;
+    background-color: rgb(111, 113, 121);
+    border: none;
+    border-radius: 2px;
+    height: 3rem;
+    width: 15rem;
+}
+
+.serchBox:hover,
+.serchBox:active,
+.serchBox:focus {
+    outline: none;
+    background-color: white;
+    transition: all .5s;
+}
+
+.sidebar {
+    background-color: #3a3b55;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    height: calc(100vh - 4.5rem);
+    margin-top: 4.5rem;
+}
