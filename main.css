@@ -7,16 +7,31 @@ body {
     margin: 0;
     display: grid;
     height: 100%;
-    grid-template-columns: [logoMenu]12.5rem auto;
+    grid-template-columns: 12.5rem auto;
     grid-template-rows: [sideMenu] 4.5rem [main] auto;
     grid-template-areas: "header header",
                          "sidebar mainbody";
 }
 
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 header {
-    /* grid-column-start: 1;
-    grid-column-end: -1; */
     grid-area: header;
+}
+
+a {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .header {
@@ -64,13 +79,18 @@ header {
     grid-column-end: -1;
     height: calc(100vh - 4.5rem);
     margin-top: 4.5rem;
-    padding: 15px 10px;
+    /* margin-top: 4.5rem; */
+    /* grid-area: sidebar; */
+}
+
+.sidebar div {
+    /* margin-top: 1.2rem; */
+    padding: 7px 10px;
 }
 
 .sidebar h1 {
     font-size: 16px;
     margin: 0;
-    margin-top: 10px;
     text-transform: uppercase;
     color: rgb(132, 136, 155);
     font-weight: 500;
@@ -79,24 +99,18 @@ header {
 .sidebar a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
 }
 
 .list {
     margin: 0;
     padding-left: 7px;
     inline-size: 4px;
+    line-height: 1.5rem;
 }
 
 .list li{
     text-decoration: none;
     list-style: none;
-    /* margin: 0; */
-}
-
-.list li > a {
-    font-size: 12px;
-    white-space: nowrap;
 }
 
 a:active {
@@ -111,8 +125,23 @@ a:active {
     font-size: 14px;
 }
 
-#myPlayList {
+#seeAll {
+    text-decoration: underline;
+}
 
+.store {
+    width: 180px;
+    height: 20px;
+    padding: 0;
+    text-align: center; 
+    border-top: 1px solid rgb(132, 136, 155);
+    border-bottom: 1px solid rgb(132, 136, 155);
+}
+
+#mySubscription {
+    font-weight: 300;
+    text-transform: none;
+    font-size: 14px;
 }
 
 .button {

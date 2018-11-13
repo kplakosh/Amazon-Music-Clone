@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Amazon Music Clone</title>
-    <link rel="shortcutImg" href="1.png">
+    <!-- <link rel="shortcutImg" href="1.png"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <header class="header">
         <a class="mainIcon">
             <img id="amazonLogo" src="images/Amazon-Music-Unlimited-Logo.png" alt="Amazon Music Clone">
@@ -24,11 +25,11 @@
         </section>
     </header>
     <main>
-        <section class="sidebar" id="aside">
-            <div>
+        <section class="sidebar">
+            <div class="">
                 <h1>Browse</h1>
                 <ul class="list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Recomended</a></li>
                     <li><a href="#">Stations</a></li>
                     <li><a href="#">Playslists</a></li>
@@ -63,16 +64,25 @@
                 <h1 id="myPlaylists">My Playlists</h1>
                 <ul class="list">
                     <li><a href="#">+ Create New Playlist</a></li>
-                    <li><a href="#">See all</a></li>
+                    <li><a href="#">Playlist 1</a></li>
+                    <li><a href="#">Playlist 2</a></li>
+                    <li><a href="#">Playlist 3</a></li>
+                    <li><a id="seeAll" href="#">See all</a></li>
                 </ul>
             </div>
-            <div></div>
-            <div></div>
+
+            <div class="store">
+                <a href="#">Amazon Music Store</a>
+            </div>
+            <div class="userProfile">
+                <a href="#">Your Profile</a>
+            </div>
             <div>
-                <h1>My Subscription</h1>
+                <a id="mySubscription">My Subscription</a>
             </div>
             <button class="button">Upgrade Now</button>
         </section>
+
         <section class="mainbody">
 
         </section>
