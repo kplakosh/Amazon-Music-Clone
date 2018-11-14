@@ -184,12 +184,10 @@ a:active {
 }
 
 .carusel {
-    height: 12rem;
+    height: 9.5rem;
     width: 100%;
     border: none;
     justify-content: space-between;
-    /* display: nowrap; */
-    overflow: auto;
 } 
 
 .carusel .leftScroll,
@@ -209,12 +207,25 @@ a:active {
 .rightScroll:hover {
     transition: all 1.50s;
     background-color: rgba(27, 28, 39, 0.3);
+    border: 2px solid grey;
 }
 
 .barkerSlider {
     height: 98%;
-    min-width: 80%;
-    border: 1px solid #2f3046;
+    min-width: calc(80% - 30px);
+    margin: 0 15px;
+    border: 2px solid grey;
+}
+
+.rightScroll {
+      flex-direction: end;
+}
+
+@media (min-width: 1125px) {
+    .carusel {
+        height: 12rem;
+        width: 100%;
+    }
 }
 
 /* Button Greed */
@@ -226,6 +237,6 @@ a:active {
 }
 
 /* .buttonContainer {
-
+zx
 } */
 
