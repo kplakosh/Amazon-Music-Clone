@@ -9,8 +9,18 @@ body {
     height: 100%;
     grid-template-columns: 12.5rem auto;
     grid-template-rows: [sideMenu] 4.5rem [main] auto;
-    /* grid-template-areas: "header header", */
-                         /* "sidebar mainbody"; */
+    grid-template-areas: "header header" 
+                         "sidebar mainbody";
+}
+
+header {
+    grid-area: header;
+}
+
+a {
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .backdrop {
@@ -22,16 +32,6 @@ body {
     width: 100vw;
     height: 100vw;
     background: rgba(0, 0, 0, 0.5);
-}
-
-header {
-    grid-area: header;
-}
-
-a {
-    font-size: 12px;
-    font-weight: 400;
-    white-space: nowrap;
 }
 
 .header {
@@ -74,17 +74,13 @@ a {
 }
 
 .sidebar {
-    background-color: #3a3b55;
-    grid-column-start: 2;
-    grid-column-end: -1;
-    height: calc(100vh - 4.5rem);
-    margin-top: 4.5rem;
-    /* margin-top: 4.5rem; */
-    /* grid-area: sidebar; */
+    background-color: #2f3046;
+    height: 100%;
+    padding-top: 15px;
+    grid-area: sidebar;
 }
 
 .sidebar div {
-    /* margin-top: 1.2rem; */
     padding: 7px 10px;
 }
 
@@ -173,3 +169,10 @@ a:active {
     border-radius: 5px;
     font-size: 14px;
 }
+
+.mainbody {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    /* grid-area: mainbody; */
+}
+
