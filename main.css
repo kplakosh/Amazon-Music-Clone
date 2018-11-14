@@ -195,7 +195,7 @@ a:active {
 .carusel .rightScroll {
     margin: 0;
     padding: 0;
-    width: 9.4%;
+    width: 30px;
     min-width: 4rem;
     height: 100%;
     background-color: rgba(27, 28, 39, 0.7);
@@ -212,20 +212,31 @@ a:active {
 }
 
 .barkerSlider {
-    height: 98%;
+    height: 96%;
     min-width: calc(80% - 30px);
     margin: 0 15px;
     border: 2px solid grey;
+    /* flex-direction: center; */
+
 }
 
-.rightScroll {
-      flex-direction: end;
-}
+/* .rightScroll {
+    flex-direction: end;
+} */
 
 @media (min-width: 1125px) {
     .carusel {
         height: 12rem;
         width: 100%;
+    }
+
+    .carusel .leftScroll,
+    .carusel .rightScroll {
+        width: 9.4%;
+    }
+
+    .barkerSlider {
+        height: 98%;
     }
 }
 
@@ -236,9 +247,19 @@ a:active {
     margin: 20px 0;
     height: 48px;
     width: 100%;
+    justify-content: space-between;
 }
 
-/* .buttonContainer {
-zx
-} */
+.buttonContainer {
+    width: 49%;
+    border-radius: 5px;
+    border: none;
+    background: silver;
+    color: #1b1c27;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: left;
+    padding: 16px 35px;
+    font-weight: 400;
+}
 
