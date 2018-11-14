@@ -170,9 +170,62 @@ a:active {
     font-size: 14px;
 }
 
+/* main content */
+
 .mainbody {
-    grid-column: 2 / -1;
-    grid-row: 2 / -1;
-    /* grid-area: mainbody; */
+    grid-area: mainbody;
+    width: calc(100vw - 260px);
+    margin: 30px;
 }
+
+.mainbody div,
+.mainbody section {
+    display: inline-block;
+}
+
+.carusel {
+    height: 12rem;
+    width: 100%;
+    border: none;
+    justify-content: space-between;
+    /* display: nowrap; */
+    overflow: auto;
+} 
+
+.carusel .leftScroll,
+.carusel .rightScroll {
+    margin: 0;
+    padding: 0;
+    width: 9.4%;
+    min-width: 4rem;
+    height: 100%;
+    background-color: rgba(27, 28, 39, 0.7);
+    outline: none;
+    outline-offset: 0;
+    border: 1px solid transparent;
+}
+
+.leftScroll:hover,
+.rightScroll:hover {
+    transition: all 1.50s;
+    background-color: rgba(27, 28, 39, 0.3);
+}
+
+.barkerSlider {
+    height: 98%;
+    min-width: 80%;
+    border: 1px solid #2f3046;
+}
+
+/* Button Greed */
+
+#buttonGrid {
+    display: inline-flex;
+    height: 48px;
+    width: 100%;
+}
+
+/* .buttonContainer {
+
+} */
 
