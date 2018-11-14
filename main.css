@@ -188,6 +188,7 @@ a:active {
     width: 100%;
     border: none;
     justify-content: space-between;
+    overflow: hidden;
 } 
 
 .carusel .leftScroll,
@@ -232,6 +233,7 @@ a:active {
 
 #buttonGrid {
     display: inline-flex;
+    margin: 20px 0;
     height: 48px;
     width: 100%;
 }
