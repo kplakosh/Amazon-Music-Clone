@@ -18,9 +18,12 @@ header {
 }
 
 a {
-    font-size: 12px;
-    font-weight: 400;
     white-space: nowrap;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .backdrop {
@@ -109,7 +112,13 @@ a {
     list-style: none;
 }
 
-a:active {
+.menuList {
+    font-size: 12px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.menuList:active {
     color: #146eb4;
 }
 
@@ -223,22 +232,14 @@ a:active {
     border: none;
     position: relative;
     overflow: hidden;
-    margin-top: 20px;
-    /* z-index: -1; */
-}
-
-.card div {
-    display: inline-flex;
+    margin-top: 30px;
 }
 
 .cardTitle {
     width: 100%;
     height: 25px;
     display: flex;
-    justify-content: space-between;
-}
-
-.cardTitle {
+    /* justify-content: space-between; */
     margin: 0;
     font-family: inherit;
     font-size: 20px;
@@ -246,6 +247,7 @@ a:active {
 }
 
 .cardHead {
+    display: inline-flex;
     position: relative;
     width: 100%;
     margin: 10px 0;
@@ -300,16 +302,35 @@ a:active {
 }
 
 .popularSongs {
-    /* height: 100%; */
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 64px);
+    grid-gap: 10px;
 }
 
 .horisontalTitle {
     position: relative;
-    height: 64px;
     width: 30%;
     border: none;
     background-color: #f2f2f2;
+    margin: 0 16px 12px 0;
+}
+
+.horisontalTitle ul {
+    width: 80px;
+    padding: 0;
+}
+
+.songName,
+.artist {
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.artist {
+    font-size: 0.8rem;
 }
 
 .playButton {
@@ -324,7 +345,6 @@ a:active {
     right: 0;
     margin: 15px 10px 0 0;
     height: 48px;
-    white-space: pre;
 }
 
 .addSong,
