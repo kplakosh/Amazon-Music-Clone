@@ -38,7 +38,7 @@ a {
     position: fixed;
     margin: 0;
     width: 100%;
-    background-color: #1b1c27;
+    background-color: #070d16;
     display: inline-flex;
 }
 
@@ -294,7 +294,7 @@ a:active {
 }
 
 
-.background img {
+.rounded {
     height: 178px;
     width: 178px;
     border: 1px solid gray;
