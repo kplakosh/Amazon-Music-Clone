@@ -219,26 +219,6 @@ a:active {
 
 }
 
-/* .rightScroll {
-    flex-direction: end;
-} */
-
-@media (min-width: 1125px) {
-    .carusel {
-        height: 12rem;
-        width: 100%;
-    }
-
-    .carusel .leftScroll,
-    .carusel .rightScroll {
-        width: 9.4%;
-    }
-
-    .barkerSlider {
-        height: 98%;
-    }
-}
-
 /* Button Greed */
 
 #buttonGrid {
@@ -268,6 +248,7 @@ a:active {
     height: 300px;
     border: 1px solid gray;
     position: relative;
+    overflow: hidden;
 }
 
 .shoveler div {
@@ -317,8 +298,29 @@ a:active {
     height: 178px;
     width: 178px;
     border: 1px solid gray;
-    white-space: ;
+    /* white-space: ; */
     border-radius: 89px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
+/*Popular Songs*/
+
+
+
+@media (min-width: 1125px) {
+    .carusel {
+        height: 12rem;
+        width: 100%;
+    }
+
+    .carusel .leftScroll,
+    .carusel .rightScroll {
+        width: 9.4%;
+    }
+
+    .barkerSlider {
+        height: 98%;
+    }
+
+
+}
