@@ -40,6 +40,7 @@ li {
 .header {
     position: fixed;
     margin: 0;
+    top: 0;
     width: 100%;
     background-color: #070d16;
     display: inline-flex;
@@ -77,6 +78,8 @@ li {
 }
 
 .sidebar {
+    position: fixed;
+    margin-top: 76px;
     background-color: #2f3046;
     height: 100%;
     padding-top: 15px;
@@ -98,6 +101,11 @@ li {
 .sidebar a {
     text-decoration: none;
     color: white;
+}
+
+.sidebar a:active,
+.sidebar a:active {
+    color: #2595eb;
 }
 
 .list {
@@ -276,11 +284,9 @@ li {
     justify-content: space-between;
 }
 
-.cardBody a+img {
-    height: 178px;
-    width: 178px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+.cardBody a + img {
+    height: 120px;
+    width: 120px;
 }
 
 /*Popular Songs*/
@@ -299,18 +305,26 @@ li {
     .barkerSlider {
         height: 98%;
     }
+
+    .cardBody a + img {
+        height: 178px;
+        width: 178px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .popularSongs {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto-fill);
     grid-template-rows: repeat(3, 64px);
     /* grid-gap: 10px; */
 }
 
 .horisontalTitle {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     position: relative;
     width: 30%;
