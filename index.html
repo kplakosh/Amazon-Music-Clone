@@ -7,190 +7,192 @@
     <title>Amazon Music Clone</title>
     <link rel="amazon music icon" href="https://anatomybody-charts.co/takken/364618/amazoncom-amazon-music-pc-software.jpg">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="new-styles.css">
     
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-left">
-            <a class="mainIcon">
-                <img id="amazonLogo" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/11/Amazon-Music-Unlimited-Logo-22-796x389.png"
-                    alt="Amazon Music Clone">
-            </a>
-        </div>
-        <div class="header-right">
-            <input type="text" class="serchBox">
-        </div>
-    </header>
-    <div class="main-content-body">
-        <section class="sidebar">
-            <div>
-                <h1>Browse</h1>
-                <ul class="list">
-                    <li><a class="menuList" href="index.html">Home</a></li>
-                    <li><a class="menuList" href="#">Stations</a></li>
-                    <li><a class="menuList" href="#">Playlists</a></li>
-                </ul>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-left">
+                <a class="mainIcon">
+                    <img id="amazonLogo" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/11/Amazon-Music-Unlimited-Logo-22-796x389.png"
+                        alt="Amazon Music Clone">
+                </a>
+                <input type="text" class="serchBox">
             </div>
-            <div class="store">
-                <a class="menuList" href="#">Amazon Music Store</a>
+            <div class="header-right">
             </div>
-        </section> 
+        </header>
+        <div class="main-content-body">
+            <section class="sidebar">
+                <div>
+                    <h1>Browse</h1>
+                    <ul class="list">
+                        <li><a class="menuList" href="index.html">Home</a></li>
+                        <li><a class="menuList" href="#">Stations</a></li>
+                        <li><a class="menuList" href="#">Playlists</a></li>
+                    </ul>
+                </div>
+                <div class="store">
+                    <a class="menuList" href="#">Amazon Music Store</a>
+                </div>
+            </section> 
 
-        <main class="mainbody">
-            <div class="carusel scrolling-wraper">
-                <button class="leftScroll"></button>
-                <div class="barkerSlider"></div>
-                <button class="rightScroll"></button>
+            <main class="mainbody">
+                <div class="carusel scrolling-wraper">
+                    <button class="leftScroll"></button>
+                    <div class="barkerSlider"></div>
+                    <button class="rightScroll"></button>
+                </div>
+                <div id="buttonGrid">
+                    <button class="buttonContainer leftButton">Title</button>
+                    <button class="buttonContainer rightButton">Title</button>
+                </div>
+                <section class="card">
+                    <div class="cardHead">
+                        <h1 class="cardTitle">Popular Stations</h1>
+                        <a id="seeAll" href="#">See All</a>
+                    </div>
+                    <div class="cardBody">
+                        <div class="musicSqure">
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/51OQTnQncjL._AA256_.jpg" alt=""></a>
+                        </div>
+                        <div class="musicSqure">
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/51+DAXzkSeL._AA256_.jpg" alt=""></a>
+                        </div>
+                        <div class="musicSqure">
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/51q4dfPwvuL._AA256_.jpg" alt=""></a>
+                        </div>
+                        <div class="musicSqure">
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/41oeRnAUGuL._AA256_.jpg" alt=""></a>
+                        </div>
+                        <div class="musicSqure">
+                            <a href="#"><img src="https://album-art-storage-us.s3.amazonaws.com/e6a73359d4b6e7b676e11ac595ca3cf0af69921f6a412b3dbd05c442d9f22428_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDG%2F5JR3%2FXs6KJBpJ3iKsAe%2BRhZ6i3kI8UWStJOVScSXnZPCvucVm7WAo4iwWAn9XlpNt%2BiMHvyOuDM4cH%2BdjPh00rCC8%2Bjw7xbyBDdcca0v4JaBXsT%2FSpUHXXloH8%2FUVkKmtMLAnU%2BXgCc7BCUSC5AB%2FxKzhhwtlPCDQbWc8lN8by4Qk0wZ0eM98%2F%2BN2oVeFHdn9kRidMvuEMemCICNzNKPpb0uFLT7fUdLcpzbhwYkpW3qqDXKEIH42dIAowdvJ3wU%3D&AWSAccessKeyId=ASIAZZLLX6KMXRR5IFG5&Expires=1542712923&Signature=XGBbvZRTYyiymbgREz%2BXNDPa%2B5w%3D" alt=""></a>
+                        </div>  
+                        <!-- <div class="musicSqure">
+                            <a href="https://music.amazon.com/playlists/B07KDZ1P35"></a><img src="#" alt=""></a>
+                        </div> -->
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="cardHead">
+                        <h1 class="cardTitle">Popular Songs</h1>
+                        <a id="seeAll" href="#">See All</a>
+                    </div>
+                    <div class="popularSongs">
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://album-art-storage-us.s3.amazonaws.com/f5c0eefca0b60c864367750826270814cdd0a78ad0eb9f874e22372f6de747f0_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDDfWTZU30fPPfAefIiKsAZyVo6%2BWs1FYvyq7hIcRQfQSBUrdeJI23XhvAnKWMsrlfn5KhXYskcT5ipGuOSOeY%2Bz7RWWNrcvQKcUCwNHLvXMRo8lh9Eo5a%2B5it7kRC65TmgIk5jgzo22bLUKpSyeCt4zehcJMPh89jCo%2F633XBHNtpT2qf0penWNeNSE3kRUI%2BuaHjBfXg3XbMqGx3Rlnu%2FyAdzJ9w3uaeZp191puiDdNywVpkS9SjYYj1P8ovM7J3wU%3D&AWSAccessKeyId=ASIAZZLLX6KMQJ6JFT5K&Expires=1542710536&Signature=S2aQ6pkvbOEqIoKZkPvbJWKhcVo%3D" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B01F9J5WH2?trackAsin=B01F9J61HM">Sunset Lover</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B00XA768UG/CATALOG?ref=dm_wcp_artist_link_ad">Petit Biscuit</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://album-art-storage-us.s3.amazonaws.com/1dfc73290d96dc379ca44c8c594256e4cba2c859320ae914a3fb363b4de21a30_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDFD8nRnDkL%2BQvfSHCSKsAZBJKNnRGzcEW87ZuC6b99ikQOtrgwL58KK0Umpg3XgM07SYETfzRRVEwC2qkWyOQlRPFmhP0NXBezAymJngq0o2vlCTEKqrOMybjy8jRvF6%2B2%2BVoG9ZBWhFR3soEw%2B9z6V%2BggM55II%2FJJwGBJCRkopTtNtITAlajORpT26W0lAt1VMqSii6g0tuUHfkvrkgw%2F3xU0RJqgfrCK3g05dvQ%2BByeSnqwJfqAKzUN1UokNvJ3wU%3D&AWSAccessKeyId=ASIAZZLLX6KM5LIDS6WI&Expires=1542711193&Signature=T0gTH2bx9wq6VSVr8MiJbQoLs0E%3D" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B0735434V8?trackAsin=B07353BDXV">Meant to Be</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B005PKNXZE">Babe Rexha</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/514Lz8SS2aL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07HQZMK9B/B07HR3BWPL">Without Me [Explicit]</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B004557L08/CATALOG?ref=dm_wcp_artist_link_ad">Halsey</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/41PWIdhCiRL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07GBMGBR3/B07GBLSQLK">Happier</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B001M5L2LI">Marshmello</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51cx+r8YzZL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07K4XL282/B07K4X6Z6V">thank u, next[Explicit]</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B004IUAQ9S">Ariana Grande</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51S3i18aPQL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07FD2T7X9/B07FCZ6VHJ">Natural</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B003AM1Q94/CATALOG?ref=dm_wcp_artist_link_ad">Imagine Dragons</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51iIi6zkKDL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07C89TZ1C/B07C86GL4Y">Better Now [Explicit]</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B00THRSUTK/CATALOG">Post Malone</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/61wgYcp-csL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07BJ9R4JM/B07BJ9MKQW">Pray For The Wicked [Explicit]</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B0012XC192/CATALOG?ref=dm_wcp_artist_link_ad">Panic! At the Disco</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                        <div class="horisontalTitle">
+                            <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/61PQbPOhXdL._AA256_.jpg" alt=""></a>
+                            <button class="playButton"></button>
+                            <ul>
+                                <li><a class="songName" href="https://music.amazon.com/albums/B07CXP76BB/B07CXVN3FY">Girls Like You [Explicit]</a></li>
+                                <li><a class="artist" href="https://music.amazon.com/artists/B000V6KIMI/CATALOG?ref=dm_wcp_artist_link_ad">Maroon 5 feat. Cardi B</a></li>
+                            </ul>
+                            <div class="rightSection">
+                                <button class="addSong"></button>
+                                <span class="iconMenu"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div id="buttonGrid">
-                <button class="buttonContainer leftButton">Title</button>
-                <button class="buttonContainer rightButton">Title</button>
-            </div>
-            <section class="card">
-                <div class="cardHead">
-                    <h1 class="cardTitle">Popular Stations</h1>
-                    <a id="seeAll" href="#">See All</a>
-                </div>
-                <div class="cardBody">
-                    <div class="musicSqure">
-                        <a href="#"><img src="https://m.media-amazon.com/images/I/51OQTnQncjL._AA256_.jpg" alt=""></a>
-                    </div>
-                    <div class="musicSqure">
-                        <a href="#"><img src="https://m.media-amazon.com/images/I/51+DAXzkSeL._AA256_.jpg" alt=""></a>
-                    </div>
-                    <div class="musicSqure">
-                        <a href="#"><img src="https://m.media-amazon.com/images/I/51q4dfPwvuL._AA256_.jpg" alt=""></a>
-                    </div>
-                    <div class="musicSqure">
-                        <a href="#"><img src="https://m.media-amazon.com/images/I/41oeRnAUGuL._AA256_.jpg" alt=""></a>
-                    </div>
-                    <div class="musicSqure">
-                        <a href="#"><img src="https://album-art-storage-us.s3.amazonaws.com/e6a73359d4b6e7b676e11ac595ca3cf0af69921f6a412b3dbd05c442d9f22428_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDG%2F5JR3%2FXs6KJBpJ3iKsAe%2BRhZ6i3kI8UWStJOVScSXnZPCvucVm7WAo4iwWAn9XlpNt%2BiMHvyOuDM4cH%2BdjPh00rCC8%2Bjw7xbyBDdcca0v4JaBXsT%2FSpUHXXloH8%2FUVkKmtMLAnU%2BXgCc7BCUSC5AB%2FxKzhhwtlPCDQbWc8lN8by4Qk0wZ0eM98%2F%2BN2oVeFHdn9kRidMvuEMemCICNzNKPpb0uFLT7fUdLcpzbhwYkpW3qqDXKEIH42dIAowdvJ3wU%3D&AWSAccessKeyId=ASIAZZLLX6KMXRR5IFG5&Expires=1542712923&Signature=XGBbvZRTYyiymbgREz%2BXNDPa%2B5w%3D" alt=""></a>
-                    </div>  
-                    <!-- <div class="musicSqure">
-                        <a href="https://music.amazon.com/playlists/B07KDZ1P35"></a><img src="#" alt=""></a>
-                    </div> -->
-                </div>
-            </section>
-            <section class="card">
-                <div class="cardHead">
-                    <h1 class="cardTitle">Popular Songs</h1>
-                    <a id="seeAll" href="#">See All</a>
-                </div>
-                <div class="popularSongs">
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://album-art-storage-us.s3.amazonaws.com/f5c0eefca0b60c864367750826270814cdd0a78ad0eb9f874e22372f6de747f0_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDDfWTZU30fPPfAefIiKsAZyVo6%2BWs1FYvyq7hIcRQfQSBUrdeJI23XhvAnKWMsrlfn5KhXYskcT5ipGuOSOeY%2Bz7RWWNrcvQKcUCwNHLvXMRo8lh9Eo5a%2B5it7kRC65TmgIk5jgzo22bLUKpSyeCt4zehcJMPh89jCo%2F633XBHNtpT2qf0penWNeNSE3kRUI%2BuaHjBfXg3XbMqGx3Rlnu%2FyAdzJ9w3uaeZp191puiDdNywVpkS9SjYYj1P8ovM7J3wU%3D&AWSAccessKeyId=ASIAZZLLX6KMQJ6JFT5K&Expires=1542710536&Signature=S2aQ6pkvbOEqIoKZkPvbJWKhcVo%3D" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B01F9J5WH2?trackAsin=B01F9J61HM">Sunset Lover</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B00XA768UG/CATALOG?ref=dm_wcp_artist_link_ad">Petit Biscuit</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://album-art-storage-us.s3.amazonaws.com/1dfc73290d96dc379ca44c8c594256e4cba2c859320ae914a3fb363b4de21a30_256x256.jpg?response-content-type=image%2Fjpeg&x-amz-security-token=FQoGZXIvYXdzEGkaDFD8nRnDkL%2BQvfSHCSKsAZBJKNnRGzcEW87ZuC6b99ikQOtrgwL58KK0Umpg3XgM07SYETfzRRVEwC2qkWyOQlRPFmhP0NXBezAymJngq0o2vlCTEKqrOMybjy8jRvF6%2B2%2BVoG9ZBWhFR3soEw%2B9z6V%2BggM55II%2FJJwGBJCRkopTtNtITAlajORpT26W0lAt1VMqSii6g0tuUHfkvrkgw%2F3xU0RJqgfrCK3g05dvQ%2BByeSnqwJfqAKzUN1UokNvJ3wU%3D&AWSAccessKeyId=ASIAZZLLX6KM5LIDS6WI&Expires=1542711193&Signature=T0gTH2bx9wq6VSVr8MiJbQoLs0E%3D" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B0735434V8?trackAsin=B07353BDXV">Meant to Be</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B005PKNXZE">Babe Rexha</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/514Lz8SS2aL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07HQZMK9B/B07HR3BWPL">Without Me [Explicit]</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B004557L08/CATALOG?ref=dm_wcp_artist_link_ad">Halsey</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/41PWIdhCiRL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07GBMGBR3/B07GBLSQLK">Happier</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B001M5L2LI">Marshmello</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51cx+r8YzZL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07K4XL282/B07K4X6Z6V">thank u, next[Explicit]</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B004IUAQ9S">Ariana Grande</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51S3i18aPQL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07FD2T7X9/B07FCZ6VHJ">Natural</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B003AM1Q94/CATALOG?ref=dm_wcp_artist_link_ad">Imagine Dragons</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/51iIi6zkKDL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07C89TZ1C/B07C86GL4Y">Better Now [Explicit]</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B00THRSUTK/CATALOG">Post Malone</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/61wgYcp-csL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07BJ9R4JM/B07BJ9MKQW">Pray For The Wicked [Explicit]</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B0012XC192/CATALOG?ref=dm_wcp_artist_link_ad">Panic! At the Disco</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                    <div class="horisontalTitle">
-                        <a href="#"><img class="renderImage" src="https://m.media-amazon.com/images/I/61PQbPOhXdL._AA256_.jpg" alt=""></a>
-                        <button class="playButton"></button>
-                        <ul>
-                            <li><a class="songName" href="https://music.amazon.com/albums/B07CXP76BB/B07CXVN3FY">Girls Like You [Explicit]</a></li>
-                            <li><a class="artist" href="https://music.amazon.com/artists/B000V6KIMI/CATALOG?ref=dm_wcp_artist_link_ad">Maroon 5 feat. Cardi B</a></li>
-                        </ul>
-                        <div class="rightSection">
-                            <button class="addSong"></button>
-                            <span class="iconMenu"></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>

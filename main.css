@@ -95,7 +95,6 @@ ul {
     visibility: visible;
     display: block;
     position: absolute;
-    vertical-align: baseline;
     top: 72px;
     bottom: 0;
     right: auto;
