@@ -3,7 +3,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* body {
     margin: 0;
     display: grid;
     height: 100%;
@@ -11,39 +11,34 @@ body {
     grid-template-rows: [sideMenu] 4.5rem [main] auto;
     grid-template-areas: "header header" 
                          "sidebar mainbody";
-}
+} */
 
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+}
+/* 
 header {
     grid-area: header;
-}
+} */
 
 a {
     white-space: nowrap;
     text-decoration: none;
 }
 
-li {
+ul {
     list-style: none;
 }
 
-.backdrop {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vw;
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .header {
+    display: inline-flex;
     position: fixed;
     margin: 0;
     top: 0;
     width: 100%;
     background-color: #070d16;
-    display: inline-flex;
 }
 
 .mainIcon {
@@ -55,18 +50,27 @@ li {
 }
 
 .serchBox {
+    display: block;
+    height: 3rem;
+    width: 150px;
+    min-width: 150px;
     margin: 10px;
     margin-left: 3px;
-    display: block;
-    background-color: rgb(111, 113, 121);
     border: none;
     border-radius: 2px;
-    height: 3rem;
-    width: 15rem;
+    background-color: rgb(111, 113, 121);
     background-image: url(images/search-icon.png);
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: 20px;
+    z-index: 0;
+}
+
+@media (min-width: 1024px) {
+    .serchBox {
+        width: 15%;
+        min-width: 150px;
+    }
 }
 
 .serchBox:hover,
@@ -75,6 +79,7 @@ li {
     outline: none;
     background-color: white;
     transition: all .5s;
+    cursor: text;
 }
 
 .sidebar {
@@ -161,7 +166,7 @@ li {
 
 .mainbody {
     grid-area: mainbody;
-    width: calc(100vw - 300px);
+    width: 824px;
     margin: 30px;
 }
 
@@ -176,7 +181,15 @@ li {
     border: none;
     justify-content: space-between;
     overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.4s;
 } 
+
+.scrolling-wraper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
 
 .carusel .leftScroll,
 .carusel .rightScroll {
