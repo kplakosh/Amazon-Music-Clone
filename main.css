@@ -13,7 +13,7 @@ body {
     height: 100%;
     color: #7c8289;
     letter-spacing: .5px;
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 a {
@@ -25,18 +25,18 @@ ul {
     list-style: none;
 }
 
-.header-left {
-    width: 200px;
-}
-
 .header {
     display: inline-flex;
     position: absolute;
     margin: 0;
     padding: 0;
     top: 0;
-    width: 100%;
+    min-width: 1024px;
     background-color: #070d16;
+}
+
+.header-left {
+    width: 200px;
 }
 
 .mainIcon {
@@ -80,17 +80,32 @@ ul {
     cursor: text;
 }
 
+/* mainbody */
+
+.main-content-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 76px;
+    min-width: 824px;
+}
+
+/* sidebar */
+
 .sidebar {
-    display: table-row;
-    position: fixed;
-    top: 0;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    vertical-align: baseline;
+    top: 72px;
+    bottom: 0;
+    right: auto;
+    margin: 0;
     flex-direction: row;
     width: 200px;
-    margin-top: 76px;
-    background-color: #2f3046;
-    height: 100%;
+    height: calc(100% - 72px);
+    background: #222b3b linear-gradient(to bottom, #252d42, #1d1f26);
     padding-top: 15px;
-    grid-area: sidebar;
+    z-index: 1;
 }
 
 .sidebar div {
@@ -105,13 +120,13 @@ ul {
     font-weight: 500;
 }
 
-.sidebar a {
+.menuList {
     text-decoration: none;
     color: white;
 }
 
-.sidebar a:active,
-.sidebar a:active {
+.menuList:active,
+.menuList:active {
     color: #2595eb;
 }
 
@@ -149,27 +164,24 @@ ul {
     margin-left: 7px;
 }
 
-/* .button {
-    width: 180px;
-    background-color: #146eb4;
-    color: white;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 10px 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-} */
-
 /* main content */
 
 .mainbody {
-    grid-area: mainbody;
-    width: 824px;
-    margin: 30px;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    flex-grow: 1;
+    overflow: auto;
+    margin: 0;
+    left: 200px;
+    right: 0;
+    top: 72px;
+    bottom: 0;
+    height: 100%;
+    width: 764px;
+    padding: 30px;
+    z-index: 1;
+    /* width: calc(100% - 260px); */
 }
 
 .mainbody div,
