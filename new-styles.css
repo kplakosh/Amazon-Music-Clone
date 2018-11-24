@@ -171,7 +171,7 @@ body {
 
 .store {
     margin-left: 0;
-    padding: 0;
+    margin-top: 10px;
     line-height: 25px;
     text-align: left; 
     border-top: 1px solid rgba(132, 136, 155, 0.5);
@@ -180,7 +180,6 @@ body {
 
 .store a {
     margin-left: 16px;
-    margin-top: 10px;
 }
 
 /* main content */
@@ -191,6 +190,7 @@ body {
     height: 100%;
     left: 200px;
     width: 824px;
+    margin-top: 114px;
     overflow-x: scroll;
     overflow-y: auto;
 } 
@@ -200,3 +200,60 @@ body {
         width: 100% - 200px;
     } 
 }
+
+.main-content {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - 64px);
+    overflow: hidden;
+    margin: 16px 32px;
+}
+
+/* baner scroll */
+
+.carusel {
+    height: 9.5rem;
+    width: 100%;
+    border: none;
+    justify-content: space-between;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.4s;
+} 
+
+.scrolling-wraper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.carusel .leftScroll,
+.carusel .rightScroll {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    min-width: 3.8rem;
+    height: calc(100% - 2px);
+    background-color: rgba(27, 28, 39, 0.7);
+    outline: none;
+    outline-offset: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.leftScroll:hover,
+.rightScroll:hover {
+    transition: all 1.50s;
+    background-color: rgba(27, 28, 39, 0.3);
+    border: 2px solid grey;
+}
+
+.barkerSlider {
+    height: 96%;
+    min-width: calc(80% - 30px);
+    margin: 0 15px;
+    border: 2px solid grey;
+    cursor: pointer;
+    flex-shrink: 2;
+}
+
