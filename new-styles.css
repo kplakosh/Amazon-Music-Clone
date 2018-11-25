@@ -196,18 +196,19 @@ body {
     overflow-y: auto;
 } 
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .mainbody {
-        width: 100% - 200px;
+        width: 954px;
     } 
 }
 
 .main-content {
     display: flex;
     flex-flow: column;
-    width: calc(100% - 64px);
+    width: 760px;
     overflow: hidden;
     margin: 16px 32px;
+    margin-right: auto;
 }
 
 /* baner scroll */
@@ -339,17 +340,55 @@ body {
 }
 
 .card-body {
+    display: inline-flex;
+    flex-wrap: row nowrap;
     width: 100%;
     overflow: hidden;
     justify-content: space-between;
 }
 
-.music-squre {
-    display: inline-flex;
+.station-title {
+    display: flex;
+    flex-flow: column;
     width: 178px;
+    margin-right: 16px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.station-title:last-child {
+    margin: 0 !important;
+}
+
+@media (min-width: 1200px) {
+    .station-title {
+        width: 226px;
+    }
+}
+
+.music-squre {
+    padding: 0;
+    margin: 0;
 }
 
 .music-squre a img {
-    width: 178px;
     height: 178px;
+}
+
+.station-name {
+    height: 7.8rem;
+    font-weight: 200;
+    transition: all .4s;
+}
+
+.station-name a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #272727;
+    font-weight: 200;
+    letter-spacing: .5px;
+}
+
+.station-name a:hover {
+    text-decoration: underline;
 }
