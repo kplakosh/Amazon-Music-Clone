@@ -212,6 +212,8 @@ body {
 /* baner scroll */
 
 .carusel {
+    display: flex;
+    flex-flow: row;
     height: 9.5rem;
     width: 100%;
     border: none;
@@ -229,6 +231,7 @@ body {
 
 .carusel .leftScroll,
 .carusel .rightScroll {
+    display: inline-flex;
     margin: 0;
     padding: 0;
     width: 30px;
@@ -241,11 +244,20 @@ body {
     cursor: pointer;
 }
 
+.leftScroll {
+    left: 0;
+}
+
+.rightScroll {
+    right: 0;
+}
+
 .leftScroll:hover,
 .rightScroll:hover {
     transition: all 1.50s;
     background-color: rgba(27, 28, 39, 0.3);
     border: 2px solid grey;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
 }
 
 .barkerSlider {
@@ -256,4 +268,3 @@ body {
     cursor: pointer;
     flex-shrink: 2;
 }
-
