@@ -304,11 +304,22 @@ body {
     flex-flow: column;
     width: 100%;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .card-head {
     display: inline-flex;
-    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    width: 50%;
+    height: 25px;
+    display: flex;
+    margin: 0;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 #see-all {
@@ -317,4 +328,28 @@ body {
     text-transform: uppercase;
     color: #2595eb;
     font-size: 15px;
+    width: 50%;
+    text-align: right;
+    font-weight: 600;
+}
+
+#see-all:hover,
+#see-all:active {
+    text-decoration: underline;
+}
+
+.card-body {
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.music-squre {
+    display: inline-flex;
+    width: 178px;
+}
+
+.music-squre a img {
+    width: 178px;
+    height: 178px;
 }
