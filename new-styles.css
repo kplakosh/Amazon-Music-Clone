@@ -187,9 +187,10 @@ body {
 .mainbody {
 	display: inline-block;
 	vertical-align: top;
-    height: 100%;
+    height: calc(100% - 114px);
     left: 200px;
-    width: 824px;
+    width: 100%;
+    min-width: 824px;
     margin-top: 114px;
     overflow-x: scroll;
     overflow-y: auto;
@@ -276,6 +277,8 @@ body {
     margin: 20px 0;
     height: 48px;
     width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
     justify-content: space-between;
 }
 
@@ -297,8 +300,21 @@ body {
 /* popular stations section */
 
 .card {
-    display: inline-flex;
+    display: flex;
+    flex-flow: column;
     width: 100%;
     overflow: hidden;
-    
+}
+
+.card-head {
+    display: inline-flex;
+    margin: 10px;
+}
+
+#see-all {
+    text-decoration: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #2595eb;
+    font-size: 15px;
 }
