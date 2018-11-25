@@ -268,3 +268,28 @@ body {
     cursor: pointer;
     flex-shrink: 2;
 }
+
+/* 2 button container */
+
+#buttonGrid {
+    display: inline-flex;
+    margin: 20px 0;
+    height: 48px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttonContainer {
+    width: 49%;
+    border-radius: 3px;
+    border: none;
+    background: silver;
+    color: #1b1c27;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: left;
+    padding: 16px 35px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+}
